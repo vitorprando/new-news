@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple_500"
+        android:textSize="16sp"
+        tools:text="Section" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/section"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        tools:text="The title of the news goes here" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:maxLines="1"
+        android:textSize="16sp"
+        tools:text="DD/MM/YYY" />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_toEndOf="@id/date"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textSize="16sp"
+        tools:text="Author Name" />
+
+</RelativeLayout>
